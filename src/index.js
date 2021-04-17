@@ -6,7 +6,7 @@ const products = require('../products.json')
 
 
 async function configureBrowser() {
-    const browser = await puppeteer.launch({headless:false});
+    const browser = await puppeteer.launch({headless:true});
     const page = await browser.newPage();
     await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36');
     return page;
@@ -14,7 +14,7 @@ async function configureBrowser() {
 
 
 
-async function startTracking() {
+exports.startTracking = async (req, res) => {
     const page = await configureBrowser();
     let productCopy = JSON.parse(JSON.stringify(products))
     let count = 0
@@ -40,4 +40,3 @@ async function startTracking() {
 }
 
 
-startTracking()

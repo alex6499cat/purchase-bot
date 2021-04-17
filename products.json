@@ -8,6 +8,13 @@
         "maximumQuantity":5
     },
     {
+        "website":"amazon",
+        "url":"https://www.amazon.com/Jumpstart-Booster-Box-Magic-Gathering/dp/B084SDYYMP/ref=sr_1_1?dchild=1&keywords=magic+jumpstart&qid=1618697440&s=toys-and-games&sr=1-1",
+        "name":"jumpstart",
+        "maximumPrice":95,
+        "maximumQuantity":5
+    },
+    {
         "website":"bestbuy",
         "url":"https://www.bestbuy.com/site/pokemon-pokemon-tcg-shining-fates-elite-trainer-box-/6445827.p?skuId=6445827",
         "name":"shining fates etb",

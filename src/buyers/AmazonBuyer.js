@@ -7,12 +7,14 @@ module.exports =  async function buyAmazonIfInStock(page,maximumPrice,maximumQua
   const buyNow = await page.$('#buy-now-button').catch();
   
   if(buyNow){
-    await sendNotification(item.url,item.name)
+    
     let priceElement = await page.$('#price_inside_buybox')
     let value = await page.evaluate(el => el.textContent, priceElement)
 
     value = Number(value.replace(/[^0-9\.]+/g, ""))
-
+    if(value < maximumPrice){
+      await sendNotification(item.url,item.name)
+    }
     if(value < maximumPrice && configuration.buyItems === true){
       await pickHighestAmount(page,maximumQuantity)
       await clickAndWait(page,"#add-to-cart-button")

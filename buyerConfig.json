@@ -14,7 +14,7 @@
     },
     "discord":{
         "activated":true,
-        "token":"ODMyNzM3MjkzNjA0NDg3MTk5.YHoJCg.6qusyFAe2Uy6yT-RFvEJ5k29uJ8",
+        "token":"",
         "channelId":"832736984937791573"
     },
     "buyItems":false
