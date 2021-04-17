@@ -1,0 +1,38 @@
+[
+   
+    {
+        "website":"amazon",
+        "url":"https://www.amazon.com/Magic-Gathering-Spiral-Remastered-Booster/dp/B08SSSQHHF/ref=sr_1_1?dchild=1&keywords=time+spiral+remastered&qid=1618677837&sr=8-1",
+        "name":"timespiral remastered boosterbox",
+        "maximumPrice":200,
+        "maximumQuantity":5
+    },
+    {
+        "website":"bestbuy",
+        "url":"https://www.bestbuy.com/site/pokemon-pokemon-tcg-shining-fates-elite-trainer-box-/6445827.p?skuId=6445827",
+        "name":"shining fates etb",
+        "maximumPrice":30,
+        "maximumQuantity":25
+    },
+    {
+        "website":"bestbuy",
+        "url":"https://www.bestbuy.com/site/pokemon-pokemon-tcg-shining-fates-v-tin/6445822.p?skuId=6445822",
+        "name":"shining fates tin",
+        "maximumPrice":35,
+        "maximumQuantity":10
+    },
+    {
+        "website":"bestbuy",
+        "url":"https://www.bestbuy.com/site/pokemon-trading-card-game-hidden-fates-elite-trainer-box/6366749.p?skuId=6366749",
+        "name":"hidden fates etb",
+        "maximumPrice":23,
+        "maximumQuantity":2
+    },
+    {
+        "website":"target",
+        "url":"https://www.target.com/p/pok--233-mon-trading-card-game--shining-fates-elite-trainer-box/-/A-82291630",
+        "name":"shining fates etb",
+        "maximumPrice":55,
+        "maximumQuantity":25
+    }
+]

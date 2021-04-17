@@ -1,0 +1,21 @@
+{
+    "amazon":{
+        "amazonUsername":"asdf",
+        "amazonPassword":"asdf"
+    },
+    "bestbuy":{
+        "bestbuyUsername":"asdf",
+        "bestbuyPassword":"asdf",
+        "defaultPaymentSecurityCode":"asdf"
+    },
+    "target":{
+        "targetUsername":"asdf",
+        "targetPassword":"asdf"
+    },
+    "discord":{
+        "activated":true,
+        "token":"ODMyNzM3MjkzNjA0NDg3MTk5.YHoJCg.6qusyFAe2Uy6yT-RFvEJ5k29uJ8",
+        "channelId":"832736984937791573"
+    },
+    "buyItems":false
+}

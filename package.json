@@ -1,0 +1,24 @@
+{
+  "name": "purchasebot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "BotOrchestration.js",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.5",
+    "cron": "^1.8.2",
+    "discord.js": "^12.5.3",
+    "nodemailer": "^6.5.0",
+    "puppeteer": "^8.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.14",
+    "@babel/core": "^7.13.14",
+    "@babel/node": "^7.13.13",
+    "@babel/preset-env": "^7.13.12"
+  },
+  "scripts": {
+    "start:bot": "node src/BotOrchestration"
+  },
+  "author": "",
+  "license": "ISC"
+}
