@@ -1,21 +1,26 @@
 ## Purchase Bot
 
-This is node.js application that can purchase items off of Amazon, Target, Best Buy and provide discord notifications of in stock items. I do not guarantee that this bot will catch every item it is monitoring that goes in stock. I also don't guarantee that this bot will successfully buy your item when it goes in stock. Because of the nature of webpages constantly changing, crashing, or not loading, errors happen. I am also not a perfect developer lol. The discord notifications are a good backup in case the purchase does not work.
+This is node.js bot that can purchase items off of Amazon, Target, Best Buy and provide discord notifications of in stock items. I do not guarantee that this bot will catch every item it is monitoring that goes in stock. I also don't guarantee that this bot will successfully buy your item when it goes in stock. Because of the nature of webpages constantly changing, crashing, or not loading, my bot is error prone. I am also not a perfect developer lol. The discord notifications are a good backup in case the purchase does not work. 
+
+This bot is a work in progress. Future iterations will probably be more reliable and have new features. Eventually, I want this hosted on a cloud service such as AWS, Google Cloud, or Heroku, but figuring out how to use puppeteer on the cloud is easier said than done.
 
 **I am not responsible if you somehow get yourself in trouble with this bot or buy something that you didn't intend to buy lol**
 
 ## How To
 * You must have a default payment set on the websites that you are using (amazon, bestbuy, and target)
 * cd to project location and run 
-`
+```
 npm install
-`
+```
 * Create a file in the root directory called buyerConfig.json. An example file is below.
 * Execute the following command to start
-`
+```
 npm run start
-`
-`
+```
+
+## buyerConfig.json
+```
+
 {
     "amazon":{
         "amazonUsername":"",
@@ -35,7 +40,7 @@ npm run start
         "token":"theApiTokenOfYourBot",
         "channelId":"idOfTheChannelThatYourBotIsIn"
     },
-    "buyItems":true, //set to false if don't want it to try to buy (ie only want discord notifications)
+    "buyItems":true, //set to false if don't want it to try to buy (only want discord notifications)
     "headless":true, //set to false if you want to watch the bot do its thing
     "products":[ // you can set any number of products. But the more products that you have, the less likely you are to catch items that go in and out of stock very quickly.
         {
@@ -62,6 +67,5 @@ npm run start
     ]
     
 }
-
-`
+```
 
