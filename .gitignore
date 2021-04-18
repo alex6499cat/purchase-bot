@@ -1,2 +1,3 @@
 node_modules/
 buyerConfig.json
+.DS_Store
