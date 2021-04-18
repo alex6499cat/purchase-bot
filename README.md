@@ -7,15 +7,18 @@ This is node.js application that can purchase items off of Amazon, Target, Best 
 ## How To
 * You must have a default payment set on the websites that you are using (amazon, bestbuy, and target)
 * cd to project location and run 
-`
+```
 npm install
-`
+```
 * Create a file in the root directory called buyerConfig.json. An example file is below.
 * Execute the following command to start
-`
+```
 npm run start
-`
-`
+```
+
+## buyerConfig.json
+```
+
 {
     "amazon":{
         "amazonUsername":"",
@@ -35,7 +38,7 @@ npm run start
         "token":"theApiTokenOfYourBot",
         "channelId":"idOfTheChannelThatYourBotIsIn"
     },
-    "buyItems":true, //set to false if don't want it to try to buy (ie only want discord notifications)
+    "buyItems":true, //set to false if don't want it to try to buy (only want discord notifications)
     "headless":true, //set to false if you want to watch the bot do its thing
     "products":[ // you can set any number of products. But the more products that you have, the less likely you are to catch items that go in and out of stock very quickly.
         {
@@ -62,6 +65,5 @@ npm run start
     ]
     
 }
-
-`
+```
 
