@@ -9,5 +9,8 @@ module.exports =  async function sendNotification(url,name) {
     bot.on('ready', () => {
         bot.channels.cache.get(CHANNEL_ID).send("The item: " + name + " is in stock! " + url)
     });
-    bot.login(TOKEN);
+    if(configuration.discord.activated){
+        bot.login(TOKEN);
+    }
+    
 }

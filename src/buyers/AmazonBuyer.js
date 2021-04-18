@@ -24,7 +24,7 @@ module.exports =  async function buyAmazonIfInStock(page,maximumPrice,maximumQua
         await logIntoAmazon(page)
       }
       if(configuration.buyItems === true){
-        await page.$('#submitOrderButtonId')
+        await page.click('#submitOrderButtonId')
       }
       return "bought"
       
